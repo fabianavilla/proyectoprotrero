@@ -1,0 +1,155 @@
+body {
+    margin: 10;
+    background-color: #000000;
+    padding: 30px;
+}
+h2 {
+    font-family: 'New Rocker', cursive;
+    color: #fff;  
+    text-align: center;   
+}
+
+
+/* HEADER */
+.header {
+    background-color: #000000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Cambiado de row a column */
+    align-items: center;
+}
+
+.logo img {
+    max-height: 100px;
+}
+
+.nav {
+    display: flex;
+    margin-top: 20px; /* Añadido margen superior */
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 30px;
+    font-family: 'New Rocker', cursive;
+    transition: font-size 0.3s;
+}
+
+.nav a:hover {
+    font-size: 40px;  
+}
+
+.section {
+    padding: 20px;
+}
+
+/* FOTOS */
+.slider-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    height: auto;
+    max-width: 100%;  
+    max-height: 400px;  
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: #555;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/* FECHAS */
+#fechas {
+    text-align: center;     
+}
+
+#fechas-list button {
+    background-color: #030303;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px; 
+}
+
+#fechas-list button img {
+    margin-right: 5px;  
+}
+
+#fechas-list button:hover {
+    background-color: #2c2c2c; 
+}
+
+#fechas-list img {
+    width: 24px; 
+    height: 24px; 
+    margin-right: 5px; 
+}
+
+/* BIO */
+#bio {
+    color: #fff;
+}
+
+.bio-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-image {
+    margin-right: 30px;  
+}
+
+.bio-image img {
+    width: 100%;  
+    max-width: 300px;  
+    height: auto;
+}
+
+.bio-text {
+    max-width: 600px;
+    text-align: justify;  
+    margin-right: 40px;  
+}
+
+/* CONTACTO */
+
+.redes {
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.redes a {
+    margin: 30px;  
+}
